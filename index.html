@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weibo Scraper Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>微博数据爬取项目</h1>
+    
+    <div class="warning">
+        <strong>注意:</strong> 这是一个Python后端项目，不能在前端托管平台上运行。此页面仅用于展示项目信息。
+    </div>
+    
+    <h2>项目描述</h2>
+    <p>这是一个用于爬取微博数据的Python项目，可以采集特定关键词在指定时间段内的微博内容及用户信息。</p>
+    
+    <h2>功能特性</h2>
+    <ul>
+        <li>爬取微博内容、点赞数、评论数、转发数</li>
+        <li>获取用户信息：昵称、性别、签名、认证状态</li>
+        <li>支持时间段筛选（2008-2019年）</li>
+        <li>生产者消费者模式，支持多线程爬取</li>
+        <li>数据存储到MySQL数据库</li>
+    </ul>
+    
+    <h2>运行要求</h2>
+    <ul>
+        <li>Python 3.6+</li>
+        <li>MySQL数据库</li>
+        <li>安装依赖: <code>pip install -r requirements.txt</code></li>
+    </ul>
+    
+    <h2>使用方法</h2>
+    <pre><code># 1. 安装依赖
+pip install -r requirements.txt -i https://pypi.douban.com/simple
+
+# 2. 配置数据库
+# 编辑 config.py 文件，设置MySQL连接信息
+
+# 3. 创建数据库表
+python3 model.py
+
+# 4. 创建爬取任务
+python3 create_task.py
+
+# 5. 开始爬取
+python3 search_by_db.py</code></pre>
+    
+    <p><strong>注意:</strong> 此项目需要在支持Python的服务器环境中运行，不适合部署到静态网站托管平台。</p>
+</body>
+</html>

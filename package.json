@@ -1,0 +1,13 @@
+{
+  "name": "weibo-scraper",
+  "version": "1.0.0",
+  "description": "Weibo data scraping project",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'This is a Python project. Please use: pip install -r requirements.txt'",
+    "start": "echo 'This is a Python project. Please run: python3 search_by_db.py'"
+  },
+  "keywords": ["weibo", "scraping", "python"],
+  "author": "",
+  "license": "ISC"
+}
